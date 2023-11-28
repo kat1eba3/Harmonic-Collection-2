@@ -1,0 +1,111 @@
+/* Apply styles to your subway illustration container */
+.subway-illustration {
+    /* Add your styles here */
+}
+
+/* Style tooltips */
+area[title]::after {
+    content: attr(title);
+    position: absolute;
+    /* Add tooltip styles here */
+}
+
+/* Style expandable section */
+.expandable-section {
+    margin-top: 20px;
+}
+
+/* Hide the checkbox */
+.expandable-section input {
+    display: none;
+}
+
+/* Style the label to resemble a button */
+.expandable-section label {
+    display: inline-block;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hide the content by default */
+.expandable-section .content {
+    display: none;
+}
+
+/* Show the content when the checkbox is checked */
+.expandable-section input:checked + label + .content {
+    display: block;
+}
+
+/* Add more CSS styles as needed */
+
+.parallax-layer img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+}
+/* Additional styling to limit overflow and hide scrollbar */
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#draggable-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Style for the tooltip */
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    display: none;
+}
+
+/* Styling for the hovered areas */
+#person1:hover::after,
+#person2:hover::after,
+#person3:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Style expandable section */
+.expandable-section {
+    margin-top: 20px;
+}
+
+/* Hide the checkbox */
+.expandable-section input {
+    display: none;
+}
+
+/* Style the label to resemble a button */
+.expandable-section label {
+    display: inline-block;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hide the content by default */
+.expandable-section .content {
+    display: none;
+}
+
+/* Show the content when the checkbox is checked */
+.expandable-section input:checked + label + .content {
+    display: block;
+}
