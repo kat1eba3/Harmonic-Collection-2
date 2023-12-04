@@ -1,18 +1,24 @@
+/* entry6.css */
+
 body {
-    text-align: center;
+    background-image: url(/entry-6/images-e6/gluedpaper.jpg);
+    background-size: cover;
 }
 
-.geeks {
-    font-size: 40px;
-    font-weight: bold;
-    color: rgb(231, 133, 192);
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 0px;
+/* Custom styles for arranging the layout */
+section {
+    position: relative;
+    height: 100vh;
 }
 
-h1 {
-    font-family: 'Courier New', Courier, monospace; /* Replace 'Your Desired Font' with the actual font name */
-    font-size: 36px; /* You can adjust the font size as needed */
-    color: #727071; /* You can change the color as needed */
-    margin-top: 20px; /* You can adjust the top margin as needed */
+/* Style for the images */
+section img {
+    position: absolute;
+    max-width: 20%; /* Adjust the width as needed */
+    height: auto;
+}
+
+/* Additional styling to scatter the images */
+section img {
+    transform: translate(-50%, -50%);
 }

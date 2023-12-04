@@ -1,27 +1,13 @@
-// script.js
-const bus = document.getElementById("bus");
-const backgroundContainer = document.querySelector(".background-container");
-let isDragging = false;
-let prevX = 0;
+//-------------------- Java Script --------------------//
+let imageDiv = document.querySelectorAll(".image-div");
 
-bus.addEventListener("mousedown", (e) => {
-    isDragging = true;
-    prevX = e.clientX;
-});
+imageDiv.forEach((elem)=>{
+    elem.addEventListener("click", ()=>{
+        imageDiv.forEach((rev)=>{
+            rev.classList.remove("active")
+        })
 
-document.addEventListener("mousemove", (e) => {
-    if (!isDragging) return;
 
-    const deltaX = e.clientX - prevX;
-    prevX = e.clientX;
-
-    const newLeft = bus.offsetLeft + deltaX;
-    bus.style.left = newLeft + "px";
-
-    const backgroundOffset = -newLeft / 2; // Adjust the speed of parallax
-    backgroundContainer.style.backgroundPosition = backgroundOffset + "px 0";
-});
-
-document.addEventListener("mouseup", () => {
-    isDragging = false;
-});
+        elem.classList.add("active");
+    })
+})

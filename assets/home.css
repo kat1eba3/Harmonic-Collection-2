@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.center-content img {
+    width: 30vw;
+    height: auto;
+    margin-top: 20px;
+    display: block; /* Ensure images are displayed as block elements */
+    margin-left: auto; /* Center the images horizontally */
+    margin-right: auto;
+}
+
+.center-content img:last-child {
+    width: 20vw; /* Width of the second image */
+}

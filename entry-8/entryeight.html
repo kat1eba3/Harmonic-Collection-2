@@ -1,43 +1,24 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="../assets/main2.css">
-    <link rel="stylesheet" href="../assets/entry8.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/assets/entry8.css">
+  <title>Background Noise Tuner</title>
 </head>
-
 <body>
-    <div class="book">
-        <div class="cover"></div>
-        <div class="back-cover"></div>
-        <div class="pages">
-            <div class="page">Page 1</div>
-            <div class="page">Page 2</div>
-            <div class="page">Page 3</div>
-            <div class="page">Page 4</div>
-            <div class="page">Page 5</div>
-            <div class="page">Page 6</div>
-        </div>
-        <div class="last-page">
-            <img src="" alt="">
-            <h2>people I come across</h2>
-        </div>
-    </div>
+  <audio id="backgroundNoise" loop>
+    <source src="background-noise.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
 
-    <nav id="menu">
-        <ul>
-            <li><a href="/entry-1/">Entry 1</a></li>
-            <li><a href="/entry-2/entrytwo.html">Entry 2</a></li>
-            <li><a href="/entry-3/entrythree.html">Entry 3</a></li>
-            <li><a href="/entry-4/entryfour.html">Entry 4</a></li>
-            <li><a href="/entry-5/entryfive.html">Entry 5</a></li>
-            <li><a href="/entry-6/entrysix.html">Entry 6</a></li>
-            <li><a href="/entry-7/entryseven.html">Entry 7</a></li>
-            <li><a href="/entry-8/entryeight.html">Entry 8</a></li>
-            <li><a href="/entry-9/entrynine.html">Entry 9</a></li>
-            <li><a href="/entry-10/entryten.html">Entry 10</a></li>
-        </ul>
-    </nav>
+  <button id="playButton">Play Song</button>
+
+  <audio id="song">
+    <source src="your-song.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <script src="entry8.js"></script>
 </body>
-
 </html>
