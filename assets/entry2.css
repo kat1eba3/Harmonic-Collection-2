@@ -1,0 +1,53 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#background-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background1 {
+    background-image: url('/entry-2/images-e2/stairs.jpg');
+}
+
+.background2 {
+    background-image: url('/entry-2/images-e2/insidebus.jpeg');
+}
+
+.background3 {
+    background-image: url('/entry-2/images-e2/subway.jpg');
+}
+
+.background4 {
+    background-image: url('/entry-2/images-e2/subway2.jpg');
+}
+
+.background5 {
+    background-image: url('/entry-2/images-e2/tns.jpeg');
+}
+
+.background6 {
+    background-image: url('/entry-2/images-e2/unionsq.jpeg');
+}
+
+#cutout {
+    position: absolute;
+    width: 2000px; /* adjust as needed */
+    height: 1000px; /* adjust as needed */
+    background: url('/entry-2/images-e2/Untitled_Artwork-1\ 2.png') no-repeat center center / contain;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clip-path-svg {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
